@@ -1,6 +1,12 @@
 #ARouter
 ###Very simple router for node.js
 
+#### Installation
+
+<pre>
+npm install arouter	
+</pre>
+
 This allows me to define my routes in the following way:
 
 <pre>
