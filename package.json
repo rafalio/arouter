@@ -1,0 +1,15 @@
+{
+  "author": "Rafal Szymanski <me@rafal.io> (http://rafal.io)",
+  "name": "arouter",
+  "description": "A very simple router",
+  "version": "0.0.1",
+  "homepage": "http://github.com/radicality/arouter",
+  "repository": "http://github.com/radicality/arouter",
+  "keywords": ["router"],
+  "main": "./arouter.js",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
