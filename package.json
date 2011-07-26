@@ -8,7 +8,7 @@
   "keywords": ["router"],
   "main": "./arouter.js",
   "repository": {
-    "url": ""
+    "url": "http://github.com/radicality/arouter"
   },
   "dependencies": {},
   "devDependencies": {}
