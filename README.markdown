@@ -21,12 +21,13 @@ edit_p = function(req,res){
 	// posting to a page
 }
 	
-routes = 
+routes = {
 	get:
 		'/': [home]
 		'/edit': [requireLogin,edit]
 	post:
 		'/edit' : [edit_p]
+}
 </pre>
 
 and then use them in it in the following way
