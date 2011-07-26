@@ -22,11 +22,13 @@ edit_p = function(req,res){
 }
 	
 routes = {
-	get:
-		'/': [home]
+	get:{
+		'/': [home],
 		'/edit': [requireLogin,edit]
-	post:
+	},
+	post:{
 		'/edit' : [edit_p]
+	}
 }
 </pre>
 
