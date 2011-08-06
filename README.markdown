@@ -29,11 +29,11 @@ edit_p = function(req,res){
 	
 routes = {
 	get:{
-		'/': [home],
+		'/': home,
 		'/edit': [requireLogin,edit]
 	},
 	post:{
-		'/edit' : [edit_p]
+		'/edit' : edit_p
 	}
 }
 </pre>
@@ -49,4 +49,17 @@ where 'app' is the express app instance.
 
 The middleware you provide in the list for each page, are evaluated from left to right.
 Hence, anything but the last function needs to have a 'next' function in the parameter to continue the execution.
+If you're not using any middleware you don't have to put the final function in an array.
+
+If you want to apply a piece (or multiple pieces) of middleware to all of your routing functions just do:
+
+<pre>
+arouter = require('./arouter')
+arouter.router(routes,app, Middleware1)
+</pre>
+
+<pre>
+arouter = require('./arouter')
+arouter.router(routes,app, [Middleware1, Middleware2])
+</pre>
 
