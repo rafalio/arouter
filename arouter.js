@@ -14,6 +14,9 @@
         _results2 = [];
         for (path in routes[type]) {
           args = routes[type][path];
+          if (!Array.isArray(args)) {
+            args = [args];
+          }
           if (middleware) {
             args.unshift(middleware);
           }

@@ -7,6 +7,8 @@ exports.route = (routes, app, middleware) ->
   for type, func of funcs
     for path of routes[type]
       args = routes[type][path]
+      if not Array.isArray args
+        args = [args]
       if middleware
         args.unshift middleware
       args.unshift path
